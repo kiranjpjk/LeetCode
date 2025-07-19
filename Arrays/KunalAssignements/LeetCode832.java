@@ -1,4 +1,4 @@
-package Java_Learning.LeetCode;
+
 //832. Flipping an Image
 public class LeetC832 {
     public static void main(String[] args) {
