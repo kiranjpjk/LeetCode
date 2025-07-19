@@ -17,18 +17,12 @@ public class LeetCode1773 {
         System.out.println(ans);
     }
     static int countMatches(List<List<String>> items, String ruleKey, String ruleValue) {
-        int index = 0;
-        switch (ruleKey){
-            case "type":
-                index = 0;
-                break;
-            case "color":
-                index = 1;
-                break;
-            case "name":
-                index = 2;
-                break;
-        }
+        int index = switch (ruleKey) {
+            case "type" -> 0;
+            case "color" -> 1;
+            case "name" -> 2;
+            default -> 0;
+        };
         int count = 0;
         for (List<String> item : items){
             if(item.get(index).equals(ruleValue)){

@@ -7,7 +7,6 @@ public class LeetCode1732 {
 
     }
     static int largestAltitude(int[] gain) {
-        int n = gain.length;
         int height = 0;
         int max = 0;
         for (int j : gain) {

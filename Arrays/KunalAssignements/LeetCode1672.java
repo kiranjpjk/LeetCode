@@ -14,12 +14,12 @@ public class LeetCode1672 {
 
     static int maximumWealth(int[][] accounts) {
         int max = 0;
-        for (int rows = 0; rows < accounts.length; rows++) {
+        for (int[] account : accounts) {
             int sum = 0;
-            for (int cols = 0; cols < accounts[rows].length; cols++) {
-                    sum += accounts[rows][cols];
-                }
-            if(sum > max){
+            for (int i : account) {
+                sum += i;
+            }
+            if (sum > max) {
                 max = sum;
             }
         }
