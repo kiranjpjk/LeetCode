@@ -1,9 +1,7 @@
-package Java_Learning.LeetCode;
-
 import java.util.Arrays;
 
 //1365. How Many Numbers Are Smaller Than the Current Number
-public class LeetC1365 {
+public class LeetCode1365 {
     public static void main(String[] args) {
         int[] nums = {8,1,2,2,3};
         int[] ans = smallerNumbersThanCurrent(nums);

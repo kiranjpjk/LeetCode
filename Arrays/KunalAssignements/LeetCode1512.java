@@ -1,6 +1,5 @@
-package Java_Learning.LeetCode;
 //1512. Number of Good Pairs
-public class LeetC1512 {
+public class LeetCode1512 {
     public static void main(String[] args) {
         int[] nums = {1,2,3,1,1,3};
         int ans = numIdenticalPairs(nums);

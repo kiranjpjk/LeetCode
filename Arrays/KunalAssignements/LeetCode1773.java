@@ -1,9 +1,8 @@
-package Java_Learning.LeetCode;
 import java.util.*;
 import java.util.Arrays;
 
 //1773. Count Items Matching a Rule
-public class LeetC1773 {
+public class LeetCode1773 {
     public static void main(String[] args) {
         List<List<String>> items = Arrays.asList(
                 Arrays.asList("phone", "blue", "pixel"),

@@ -1,6 +1,5 @@
-package Java_Learning.LeetCode;
 //1732. Find the Highest Altitude
-public class LeetC1732 {
+public class LeetCode1732 {
     public static void main(String[] args) {
         int[] gain = {-4,-3,-2,-1,4,3,2};//[0,-4,-7,-9,-10,-6,-3,-1]
         int ans = largestAltitude(gain);

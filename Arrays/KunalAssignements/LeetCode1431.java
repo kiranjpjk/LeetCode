@@ -1,10 +1,8 @@
-package Java_Learning.LeetCode;
-
 import java.util.ArrayList;
 import java.util.List;
 
 //1431. Kids With the Greatest Number of Candies
-public class LeetC1431 {
+public class LeetCode1431 {
     public static void main(String[] args) {
         int[] candies = {2, 3, 7};
         int extracandies = 1;

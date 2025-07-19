@@ -1,9 +1,7 @@
-package Java_Learning.LeetCode;
-
 import java.util.Arrays;
 
 //1470. Shuffle the Array
-public class LeetC1470 {
+public class LeetCode1470 {
     public static void main(String[] args) {
         int[] nums = {2, 5, 1, 3, 4, 7};
         int n = 3;
