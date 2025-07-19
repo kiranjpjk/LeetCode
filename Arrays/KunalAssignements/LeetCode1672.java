@@ -1,7 +1,5 @@
 //1672. Richest Customer Wealth
 
-import java.util.Arrays;
-
 public class LeetCode1672 {
     public static void main(String[] args) {
         int[][] accounts = {
