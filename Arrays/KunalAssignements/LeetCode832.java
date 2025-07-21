@@ -1,33 +1,28 @@
-package Java_Learning.LeetCode;
+import java.sql.Array;
+import java.util.Arrays;
+
 //832. Flipping an Image
-public class LeetC832 {
+public class LeetCode832 {
     public static void main(String[] args) {
         int[][] image = {
                 {1,1,0},
                 {1,0,1},
                 {0,0,0}
         };
+        int[][] ans= flipAndInvertImage(image);
+
+        System.out.println(Arrays.deepToString(ans));
 
     }
     static  int[][] flipAndInvertImage(int[][] image) {
+        int n = image.length;
         for(int[] row : image){
-            int start = 0;
-            int end = row.length - 1;
-
-            while(start < end){
-                int temp = row[start];
-                row[start] = row[end];
-                row[end] = temp;
-
-                start++;
-                end--;
+            for (int i = 0; i < (n + 1) / 2; i++) {
+                int temp = row[i] ^ 1;
+                row[i] = row[n - 1 - i] ^ 1;
+                row[n - 1 - i] = temp;
             }
         }
-        for(int[] row : image){
-            for(int[] col : image){
-                image[row][col] ^= 1;
-            }
-        }
-        return ;
+        return image;
     }
 }
